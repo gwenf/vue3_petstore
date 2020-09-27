@@ -3,56 +3,70 @@
     <div class="col">
       <form>
         <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <label for="name-input" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
+            <input type="text" class="form-control" id="name-input">
           </div>
         </div>
         <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <label for="age-input" class="col-sm-2 col-form-label">Age</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
+            <input type="number" class="form-control" id="age-input">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="color-input" class="col-sm-2 col-form-label">Color</label>
+          <div class="col-sm-10">
+            <input type="color" class="form-control" id="color-input">
           </div>
         </div>
         <fieldset class="form-group">
           <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+            <legend class="col-form-label col-sm-2 pt-0">Species</legend>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="cat" checked>
                 <label class="form-check-label" for="gridRadios1">
-                  First radio
+                  Dog
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="dog">
                 <label class="form-check-label" for="gridRadios2">
-                  Second radio
+                  Cat
                 </label>
               </div>
-              <div class="form-check disabled">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                <label class="form-check-label" for="gridRadios3">
-                  Third disabled radio
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="gender-choice1" value="cat" checked>
+                <label class="form-check-label" for="gender-choice1">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="gender-choice2" value="dog">
+                <label class="form-check-label" for="gender-choice2">
+                  Male
                 </label>
               </div>
             </div>
           </div>
         </fieldset>
         <div class="form-group row">
-          <div class="col-sm-2">Checkbox</div>
+          <label for="notes-input" class="col-sm-2 col-form-label">Notes</label>
           <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Example checkbox
-              </label>
-            </div>
+            <textarea class="form-control" id="notes-input"></textarea>
           </div>
         </div>
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </form>
