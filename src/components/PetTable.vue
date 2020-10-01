@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr v-for="(pet, i) in pets" :key="i">
         <th scope="row">1</th>
         <td>Mark</td>
         <td>Otto</td>
@@ -18,3 +18,13 @@
     </tbody>
   </table>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  computed: {
+    ...mapState(['pets'])
+  }
+}
+</script>
