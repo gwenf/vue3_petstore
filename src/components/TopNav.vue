@@ -10,7 +10,7 @@
         <router-link class="nav-link" :to="{ path: '/pets/cats' }">Cats</router-link>
         <router-link class="nav-link" :to="{ path: '/pets/dogs' }">Dogs</router-link>
 
-        <router-link class="btn btn-primary ml-auto" :to="{ path: '/add' }">Add</router-link>
+        <router-link class="btn btn-primary ml-auto" :to="{ path: '/add-pet' }">Add</router-link>
       </div>
     </div>
   </nav>
