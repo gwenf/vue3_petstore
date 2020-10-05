@@ -10,9 +10,9 @@
     </thead>
     <tbody>
       <tr v-for="(pet, i) in pets" :key="i">
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+        <th scope="row"> {{ i+1 }} </th>
+        <td>{{ pet.name }}</td>
+        <td v-bind:style="{ 'background-color': pet.color }" ><span></span></td>
         <td>@mdo</td>
       </tr>
     </tbody>
