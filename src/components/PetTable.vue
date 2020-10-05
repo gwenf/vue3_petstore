@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(pet, i) in pets" :key="i">
+      <tr v-for="(pet, i) in filteredPets" :key="i">
         <th scope="row"> {{ i+1 }} </th>
         <td>{{ pet.name }}</td>
         <td v-bind:style="{ 'background-color': pet.color }" ><span></span></td>
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
 export default {
   computed: {
-    ...mapState(['pets'])
+    filteredPets: function () {
+      return this.$store.getters.filterBySpecies(this.$route.params.type.slice(0, -1))
+    }
   }
 }
 </script>
